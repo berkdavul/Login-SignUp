@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Login</title>
+
+    <style></style>
+  </head>
+
+  <body>
+    <div class="login">
+      <div class="border">
+        <form id="loginform">
+          <label for="email"></label><br />
+          <input id="email" name="email" placeholder="E-Mail Adresiniz" />
+          <p class="error" id="error_mail"></p>
+
+          <label for="password"></label>
+          <i
+            onclick="toggle_password()"
+            id="toggle_eye"
+            class="fa-solid fa-eye"
+          ></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Şifreniz"
+          />
+          <p class="error" id="error_parola"></p>
+
+          <a id="forgot_password" href="">Sifremi Unuttum</a>
+
+          <input
+            class="remember_section"
+            type="checkbox"
+            value="lsRememberMe"
+            id="rememberMe"
+          />
+          <label class="remember_section" for="rememberMe">Beni Hatırla</label
+          ><br />
+          <button id="btn" type="submit">Giriş yap</button>
+        </form>
+
+        <a id="signup_link" href="../signup/signup-page.html">Üye Ol</a>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

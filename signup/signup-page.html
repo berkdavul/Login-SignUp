@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
+
+    <title>SignUp</title>
+  </head>
+
+  <body>
+    <div class="sign_up">
+      <div class="border">
+        <form id="signupform">
+          <span class="fullname">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" placeholder="Ad" />
+            <label for="surnname"></label>
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              placeholder="Soyad"
+            />
+          </span>
+          <p class="error" id="error_fname"></p>
+
+          <label for="email"></label>
+          <input id="email" name="email" placeholder="E-Mail" />
+          <p class="error" id="error_mail"></p>
+
+          <label for="password"></label>
+          <i
+            onclick="toggle_password()"
+            id="toggle_eye"
+            class="fa-solid fa-eye"
+          ></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Şifre"
+          />
+          <p class="error" id="error_parola"></p>
+
+          <label for="rePassword"></label>
+
+          <input
+            type="password"
+            id="rePassword"
+            name="rePassword"
+            placeholder="Şifre (Tekrar)"
+          />
+          <p class="error" id="error_reParola"></p>
+
+          <input
+            class="terms_policy"
+            type="checkbox"
+            value="terms_policy"
+            id="terms_policy"
+          />
+          <label class="terms_policy" for="terms_policy"
+            ><a href="" style="text-decoration: none; color: blue"
+              >Üyelik Sözleşmesini</a
+            >
+            Okudum Onaylıyorum.</label
+          >
+          <p class="error" id="error_terms"></p>
+          <button id="btn" type="submit">Üye Ol</button>
+        </form>
+
+        <a id="login_link" href="..//login/login-page.html">Giriş Yap</a>
+      </div>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>

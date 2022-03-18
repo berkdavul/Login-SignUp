@@ -1,0 +1,73 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.border {
+  border: 2px solid rgba(236, 232, 225, 0.795);
+  display: inline-block;
+  padding: 20px;
+  border-radius: 30px;
+}
+.login {
+  justify-content: center;
+  padding-top: 15%;
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+form input {
+  width: 300px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgb(231, 255, 255);
+  border: none;
+}
+#forgot_password {
+  color: #ff8c00;
+  display: inline-block;
+  text-align: left;
+  margin-right: 80px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+form button {
+  border-radius: 20px;
+  width: 200px;
+  margin: 10px 60px;
+  background-color: #ff8c00;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+form i {
+  margin-left: 270px;
+  margin-top: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#signup_link {
+  display: block;
+  border-radius: 50px;
+  width: 100px;
+  margin: 5px 120px;
+  background-color: #06b0b6;
+  padding: 2px;
+  color: #fff;
+  text-decoration: none;
+}
+.remember_section {
+  width: 20px;
+  border-radius: 15px;
+  padding: 0px;
+  color: rgb(10, 9, 9);
+  border: none;
+}
+.error {
+  margin-left: 5px;
+  padding: 10px;
+  text-align: left;
+  color: red;
+}
